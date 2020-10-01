@@ -13,10 +13,9 @@ function setup() {
 
 	paper1 = new Paper(200, 550, 70);
 	ground = new Ground(400,height,1200,20);
-	dustbin = new Dustbin(600, 450, 200, 20);
-	dustbin2 = new Dustbin(515, 575, 20, 250);
-	dustbin3 = new Dustbin(685, 575, 20, 250);
-	ground = new Ground(400, 690, 800, 20);
+	dustbin1 = new Dustbin(600, height - 10, 100, 20);
+	dustbin2 = new Dustbin(550, height - 50, 20, 100);
+	dustbin3 = new Dustbin(600, height - 50, 20, 100);
 
 	Engine.run(engine);
   
@@ -29,10 +28,9 @@ function draw() {
   Engine.update(engine);
 
   paper1.display();
-  dustbin.display();
+  dustbin1.display();
   dustbin2.display();
   dustbin3.display();
-  ground.display();
   
   drawSprites();
  
