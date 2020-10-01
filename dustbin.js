@@ -13,10 +13,8 @@ class Dustbin{
         World.add(world, this.body);
       }
       display(){
-        push();
-        //var pos = this.body.position;
         translate(this.body.position.x, this.body.position.y);
-        //rect(0, 0, this.width, this.height);
+        //rect(pos.x, pos.y, this.width, this.height);
         imageMode(CENTER);
         image(this.image, 0, 0, this.width, this.height);
         pop();
